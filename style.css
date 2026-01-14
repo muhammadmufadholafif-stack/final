@@ -1,0 +1,56 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: #f8f9fa;
+}
+
+.bg-navy {
+  background: midnightblue;
+}
+
+.text-info {
+  color: deepskyblue !important;
+}
+
+.mt-n5 {
+  margin-top: -60px;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 24px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-muncul {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+[data-animate-delay] {
+  animation-delay: attr(data-animate-delay ms);
+}
